@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{ 
+    margin: 0;
+    padding: 0;
+    
+}
+li{
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 5px;
+    text-align: left;
+    
+}
+ul{
+    margin-left: 5px;
+}
+aside{
+    background-color:FBC02D ;
+    margin: 0;
+    justify-content: space-around;
+   
+}
+    
+
+h1{
+    border: 10px solid black;
+    background-color: black;
+    color:FBC02D;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.hobbies{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-top: 5px; 
+    
+}
+.c{
+    border:1px solid black;
+    border-radius: 60%;
+    padding: 10px;
+    margin: 10px;
+}
+p1{
+    color: black;
+    margin-left: 10px;
+    padding-top: 5px;
+    margin-top: 20px;
+}   
+img{
+    border: 5px solid FBC02D  ;
+    border-radius: 50%;
+    margin-left: 80px;
+    margin-bottom: 15px;
+    position: relative;
+     
+}
+header{
+    margin: 0;
+    padding: 0;
+}
+
+
+h2{
+    font-size: 40px;
+    color: FBC02D ;
+    padding-left: 10px;
+}
+h3{
+    font-size: 15px;
+    color: black ;
+    padding-left: 10px;
+}
+h4{
+    padding: 10px;
+    padding-left: 30px;
+    font-size: 25px;
+  
+}
+article{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+        }
+hr{
+    border: none;    
+    height: 2px;
+    background-color:FBC02D ;   
+    color: FBC02D;
+  } 
+  section{
+     
+      justify-content: space-around;
+      text-align: left;
+      background-color:white;
+     }
+
+.line{
+    display: flex;
+}
+.icon{
+    color:FBC02D  ;
+    padding-left: 10px;
+}
+.clo{
+    display: flex;
+}
+time{
+    padding-left: 10px;
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style-type: circle;
+}
+.circle{
+    
+    color:FBC02D;
+    margin-top: 10px;
+}
+p{
+    text-align: left;
+padding:10px 25px 10px 150px;
+}
+b{
+    padding-bottom: 5px;
+}
+.ref{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+p3{
+    padding-left: 10px;
+    
+}
+@media all and (min-width: 900px)  {
+    body{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    section{
+        width: 75%;  
+        display: flex;  
+        flex-direction: column;   
+    }
+    aside{
+        
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+    }      
+}
+@media all and  (max-width:899px) {
+    
+    
+section{
+    display: flex;
+    flex-direction: row;
+    
+    width: 100%;
+}
+aside{
+    display:flex;
+    flex-direction:row;
+    width: 100%;
+}
+ 
+}
