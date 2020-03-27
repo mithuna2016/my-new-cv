@@ -5,7 +5,7 @@
 body{ 
     margin: 0;
     padding: 0;
-    
+  
 }
 li{
     list-style: none;
@@ -21,7 +21,7 @@ aside{
     background-color:FBC02D ;
     margin: 0;
     justify-content: space-around;
-   
+ 
 }
     
 
@@ -100,6 +100,7 @@ hr{
       justify-content: space-around;
       text-align: left;
       background-color:white;
+     
      }
 
 .line{
@@ -140,39 +141,31 @@ p3{
     padding-left: 10px;
     
 }
-@media all and (min-width: 900px)  {
+@media only all and (min-device-width : 900px){
     body{
-        display: flex;
-        flex-direction: row;
-        margin: 0;
-        padding: 0;
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-areas: 
+      "right" "left"
+        ;
+    }
+
+@media only all and (max-device-width : 310px){
+
+    body {
+        display: grid;
+        grid-template: repeat(8,100%)/ repeat(1,100%);
+       grid-template-areas: 
+       "contact"
+    "aboutme"
+    "hobb"
+    "h1"
+    "h2"
+    "education"
+    "experience"
+    "refe";
+         
         width: 100%;
     }
-    section{
-        width: 75%;  
-        display: flex;  
-        flex-direction: column;   
-    }
-    aside{
-        
-        width: 25%;
-        display: flex;
-        flex-direction: column;
-    }      
-}
-@media all and  (max-width:899px) {
     
-    
-section{
-    display: flex;
-    flex-direction: row;
-    
-    width: 100%;
-}
-aside{
-    display:flex;
-    flex-direction:row;
-    width: 100%;
-}
- 
 }
