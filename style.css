@@ -5,7 +5,12 @@
 body{ 
     margin: 0;
     padding: 0;
-  
+  display: grid;
+grid-template-columns: 100%;
+grid-template-areas: 
+"aside"
+"section";
+width: 100%;
 }
 li{
     list-style: none;
@@ -21,8 +26,12 @@ aside{
     background-color:FBC02D ;
     margin: 0;
     justify-content: space-around;
- 
+    grid-area: aside;
+    width: 100%;
+    padding: 0px;
+    margin-top: 0px;
 }
+
     
 
 h1{
@@ -48,23 +57,17 @@ h1{
     padding: 10px;
     margin: 10px;
 }
-p1{
-    color: black;
-    margin-left: 10px;
-    padding-top: 5px;
-    margin-top: 20px;
-}   
+
 img{
     border: 5px solid FBC02D  ;
     border-radius: 50%;
-    margin-left: 80px;
-    margin-bottom: 15px;
-    position: relative;
-     
+    text-align: left;
+    
 }
 header{
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 
@@ -84,11 +87,7 @@ h4{
     font-size: 25px;
   
 }
-article{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    
-        }
+
 hr{
     border: none;    
     height: 2px;
@@ -100,8 +99,12 @@ hr{
       justify-content: space-around;
       text-align: left;
       background-color:white;
+      grid-area: section;
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+  }
      
-     }
 
 .line{
     display: flex;
@@ -114,10 +117,9 @@ hr{
     display: flex;
 }
 time{
-    padding-left: 10px;
+padding:10px 50px 10px 10px ;
     width: 300px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    
     list-style-type: circle;
 }
 .circle{
@@ -127,7 +129,8 @@ time{
 }
 p{
     text-align: left;
-padding:10px 25px 10px 150px;
+    padding-left: 20px;
+
 }
 b{
     padding-bottom: 5px;
@@ -137,35 +140,18 @@ b{
     flex-direction: row;
     justify-content: space-around;
 }
-p3{
-    padding-left: 10px;
-    
-}
-@media only all and (min-device-width : 900px){
+
+
+@media all and (min-width:900px){
     body{
-        display: grid;
-        grid-template-columns: 25% 75%;
-        grid-template-areas: 
-      "right" "left"
-        ;
-    }
-
-@media only all and (max-device-width : 310px){
-
-    body {
-        display: grid;
-        grid-template: repeat(8,100%)/ repeat(1,100%);
-       grid-template-areas: 
-       "contact"
-    "aboutme"
-    "hobb"
-    "h1"
-    "h2"
-    "education"
-    "experience"
-    "refe";
-         
+        display: flex;
+        flex-direction: row;
         width: 100%;
     }
-    
+    aside{
+        width: 25%;
+    }
+    section{
+        width: 75%;   
+    }
 }
