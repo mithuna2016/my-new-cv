@@ -5,6 +5,7 @@
 body{ 
     margin: 0;
     padding: 0;
+    line-height: 1.6em;
   display: grid;
 grid-template-columns: 100%;
 grid-template-areas: 
@@ -21,16 +22,15 @@ li{
 }
 ul{
     margin-left: 5px;
+    padding-bottom: 20px;
 }
 aside{
     background-color:FBC02D ;
     margin: 0;
-    justify-content: space-around;
     grid-area: aside;
     width: 100%;
-    padding: 0px;
-    margin-top: 0px;
-}
+    padding-top: 50px;}
+   
 
     
 
@@ -75,11 +75,14 @@ h2{
     font-size: 40px;
     color: FBC02D ;
     padding-left: 10px;
-}
+    margin-top: 20px;
+    line-height: 1.2em;
+} 
 h3{
     font-size: 15px;
     color: black ;
     padding-left: 10px;
+    margin-bottom: 30px;
 }
 h4{
     padding: 10px;
@@ -93,6 +96,7 @@ hr{
     height: 2px;
     background-color:FBC02D ;   
     color: FBC02D;
+
   } 
   section{
      
@@ -117,24 +121,25 @@ hr{
     display: flex;
 }
 time{
-padding:10px 50px 10px 10px ;
-    width: 300px;
+
+    width:40%;
     
     list-style-type: circle;
 }
 .circle{
     
     color:FBC02D;
-    margin-top: 10px;
+    margin-top: 6px;
 }
 p{
-    text-align: left;
-    padding-left: 20px;
+    text-align: right;
+ 
+    padding-right: 5px;
+width: 60%;
+padding-bottom: 30px;
+}
 
-}
-b{
-    padding-bottom: 5px;
-}
+
 .ref{
     display: flex;
     flex-direction: row;
@@ -142,16 +147,23 @@ b{
 }
 
 
-@media all and (min-width:900px){
+@media all and (min-width:800px){
     body{
         display: flex;
         flex-direction: row;
         width: 100%;
+        justify-content: space-around;
+
     }
     aside{
         width: 25%;
     }
     section{
         width: 75%;   
+    }
+    p{
+        text-align: left;
+        padding-right: 0px;
+        
     }
 }
